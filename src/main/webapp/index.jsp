@@ -2,9 +2,9 @@
 <!-- Website template by freewebsitetemplates.com -->
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Book Mingle</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+<meta charset="UTF-8">
+<title>Book Mingle</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 	<div id="header">
@@ -13,71 +13,56 @@
 				<a href="index.jsp"></a>
 			</div>
 			<ul id="navigation">
-				<li class="active">
-					<a href="index.jsp">Home</a>
-				</li>
-				<li>
-					<a href="createPage.jsp">Create RP</a>
-				</li>
-				<li>
-					<a href="news.jsp">News</a>
-				</li>
-				<li>
-					<a href="about.jsp">BookMingle</a>
-				</li>
-				<li>
-					<a href="contact.jsp">Contact</a>
-				</li>
+				<li class="active"><a href="index.jsp">Home</a></li>
+				<li><a href="createPage.jsp">Create RP</a></li>
+				<li><a href="news.jsp">News</a></li>
+				<li><a href="about.jsp">BookMingle</a></li>
+				<li><a href="contact.jsp">Contact</a></li>
 			</ul>
 		</div>
 	</div>
-	<div id="adbox">
-		<div class="clearfix">
-			<img src="images/box.png" alt="Img" height="342" width="368">
-			<div>
-				<h1>Ideas?</h1>
-				<h2>That's what we live for.</h2>
-				<p>
-					Wix is an online website builder with a simple drag & drop interface, meaning you do the work online and instantly publish to the web. <span><a href="index.html" class="btn">Try It Now!</a><b>Don’t worry it’s for free</b></span>
-				</p>
-			</div>
-		</div>
+	<div id="adsbox">
+		<h1>Welcome to Book Mingle!</h1>
+		<p>We talk about books. You can host a certain topic of a specific book to discuss with other people, or </p>
 	</div>
 	<div id="contents">
+	
 		<div id="tagline" class="clearfix">
-			<h1>Design With Simplicity.</h1>
+			<h1>On Going R&D pages </h1>
 			<div>
-				<p>
-					You can replace all this text with your own text. Want an easier solution for a Free Website?
-				</p>
-				<p>
-					Head straight to Wix and immediately start customizing your website!
-				</p>
-				<p>
-					Wix is an online website builder with a simple drag & drop interface, meaning you do the work online and instantly publish to the web.
-				</p>
+				stepcarousel holder (look at TokyoBowl index pg)
+				stepcarousel holder (look at TokyoBowl index pg)
+				stepcarousel holder (look at TokyoBowl index pg)
+				These two place holders need to generate pre-view pages which have active discussion.
 			</div>
 			<div>
-				<p>
-					You can replace all this text with your own text. Want an easier solution for a Free Website?
-				</p>
-				<p>
-					Head straight to Wix and immediately start customizing your website!
-				</p>
-				<p>
-					Wix is an online website builder with a simple drag & drop interface, meaning you do the work online and instantly publish to the web.
-				</p>
+				stepcarousel holder (look at TokyoBowl index pg)
+				stepcarousel holder (look at TokyoBowl index pg)
+				stepcarousel holder (look at TokyoBowl index pg)
+				stepcarousel holder (look at TokyoBowl index pg)
+				stepcarousel holder (look at TokyoBowl index pg)
+				stepcarousel holder (look at TokyoBowl index pg)
+				stepcarousel holder (look at TokyoBowl index pg)
 			</div>
 		</div>
+		<div class="viewMore">
+		<a href="#">view more..</a>
+		</div>
 	</div>
+
 	<div id="footer">
 		<div class="clearfix">
 			<div id="connect">
-				<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a><a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a><a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a><a href="http://www.freewebsitetemplates.com/misc/contact/" target="_blank" class="tumbler"></a>
+				<a href="http://freewebsitetemplates.com/go/facebook/"
+					target="_blank" class="facebook"></a><a
+					href="http://freewebsitetemplates.com/go/googleplus/"
+					target="_blank" class="googleplus"></a><a
+					href="http://freewebsitetemplates.com/go/twitter/" target="_blank"
+					class="twitter"></a><a
+					href="http://www.freewebsitetemplates.com/misc/contact/"
+					target="_blank" class="tumbler"></a>
 			</div>
-			<p>
-				&copy; BookMingle. All Rights Reserved.
-			</p>
+			<p>&copy; BookMingle. All Rights Reserved.</p>
 		</div>
 	</div>
 </body>
