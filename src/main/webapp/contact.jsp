@@ -37,9 +37,7 @@
 				<input type="submit" value="Send" />
 			</form>
 		</div>
-		<div class="section contact">
-			Place Holder for BM logo
-		</div>
+		<div class="section contact">Place Holder for BM logo</div>
 	</div>
 	<div id="footer">
 		<div class="clearfix">
