@@ -17,6 +17,7 @@ public class UserInfo {
 	private String lastname;
 	private String dob;
 	private Date joinedDate;
+	private Date lastModifiedDate;
 	
 	/**
 	 * @return the memberId
@@ -89,6 +90,18 @@ public class UserInfo {
 	 */
 	public void setJoinedDate(Date joinedDate) {
 		this.joinedDate = joinedDate;
+	}
+	/**
+	 * @return the lastModifiedDate
+	 */
+	public Date getLastModifiedDate() {
+		return lastModifiedDate;
+	}
+	/**
+	 * @param lastModifiedDate the lastModifiedDate to set
+	 */
+	public void setLastModifiedDate(Date lastModifiedDate) {
+		this.lastModifiedDate = lastModifiedDate;
 	}
 	
 	

@@ -20,7 +20,7 @@
 					<a href="createPage.jsp" tag="create review page">Create RP</a>
 				</li>
 				<li>
-					<a href="news.jsp">News</a>
+					<a href="news.jsp">R&Ds</a>
 				</li>
 				<li class="active">
 					<a href="about.jsp">BookMingle</a>

@@ -15,7 +15,7 @@
 			<ul id="navigation">
 				<li><a href="index.jsp">Home</a></li>
 				<li><a href="createPage.jsp">Create RP</a></li>
-				<li><a href="news.jsp">News</a></li>
+				<li><a href="news.jsp">R&amp;Ds</a></li>
 				<li><a href="about.jsp">BookMingle</a></li>
 				<li class="active"><a href="contact.jsp">Contact</a></li>
 			</ul>

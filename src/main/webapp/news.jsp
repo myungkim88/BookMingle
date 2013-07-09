@@ -20,7 +20,7 @@
 					<a href="createPage.jsp">Create RP</a>
 				</li>
 				<li class="active">
-					<a href="news.jsp">News</a>
+					<a href="news.jsp">R&Ds</a>
 				</li>
 				<li>
 					<a href="about.jsp">BookMingle</a>
@@ -33,7 +33,7 @@
 	</div>
 	<div id="contents">
 		<div class="main">
-			<h1>News</h1>
+			<h1>New R&Ds</h1>
 			<ul class="news">
 				<li>
 					<div class="date">
@@ -74,24 +74,24 @@
 			</ul>
 		</div>
 		<div class="sidebar">
-			<h1>Popular Posts</h1>
+			<h1>Popular R&Ds</h1>
 			<ul class="posts">
 				<li>
-					<h4 class="title"><a href="post.html">Making It Work</a></h4>
+					<h4 class="title"><a href="post.html">Popular R&D 1</a></h4>
 					<p>
-						I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.
+						bulah bulah
 					</p>
 				</li>
 				<li>
-					<h4 class="title"><a href="post.html">Designs and Concepts</a></h4>
+					<h4 class="title"><a href="post.html">Popular R&D 2</a></h4>
 					<p>
-						I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.
+						bulah bulah
 					</p>
 				</li>
 				<li>
-					<h4 class="title"><a href="post.html">Getting It Done!</a></h4>
+					<h4 class="title"><a href="post.html">Popular R&D 2</a></h4>
 					<p>
-						I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.
+						bulah bulah
 					</p>
 				</li>
 			</ul>

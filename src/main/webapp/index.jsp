@@ -15,17 +15,16 @@
 			<ul id="navigation">
 				<li class="active"><a href="index.jsp">Home</a></li>
 				<li><a href="createPage.jsp">Create RP</a></li>
-				<li><a href="news.jsp">News</a></li>
+				<li><a href="news.jsp">R&amp;Ds</a></li>
 				<li><a href="about.jsp">BookMingle</a></li>
 				<li><a href="contact.jsp">Contact</a></li>
 			</ul>
 		</div>
 	</div>
-	
 	<div id="contents">
 	
 		<div id="tagline" class="clearfix">
-			<h1>On Going R&D pages </h1>
+			<h1>On Going R&amp;D pages </h1>
 			<div>
 				stepcarousel holder (look at TokyoBowl index pg)
 				stepcarousel holder (look at TokyoBowl index pg)
