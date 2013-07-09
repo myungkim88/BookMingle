@@ -16,6 +16,7 @@ public class UserInfo {
 	private String firstname;
 	private String lastname;
 	private String dob;
+	private String email;
 	private Date joinedDate;
 	private Date lastModifiedDate;
 	
@@ -103,8 +104,17 @@ public class UserInfo {
 	public void setLastModifiedDate(Date lastModifiedDate) {
 		this.lastModifiedDate = lastModifiedDate;
 	}
-	
-	
-	
+	/**
+	 * @return the email
+	 */
+	public String getEmail() {
+		return email;
+	}
+	/**
+	 * @param email the email to set
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	
 }
