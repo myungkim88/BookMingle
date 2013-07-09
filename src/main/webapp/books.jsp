@@ -4,7 +4,7 @@
 	<meta name="author" content="Wink Hosting (www.winkhosting.com)" />
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<title>Book Mingle</title>
+	<title>BookMingle</title>
 </head>
 <body>
 	<div id="page" align="center">

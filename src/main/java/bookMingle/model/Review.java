@@ -1,5 +1,5 @@
 package bookMingle.model;
 
 public class Review {
-	private 
+	int bookId;
 }

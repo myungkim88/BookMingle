@@ -21,10 +21,7 @@
 			</ul>
 		</div>
 	</div>
-	<div id="adsbox">
-		<h1>Welcome to Book Mingle!</h1>
-		<p>We talk about books. You can host a certain topic of a specific book to discuss with other people, or </p>
-	</div>
+	
 	<div id="contents">
 	
 		<div id="tagline" class="clearfix">
@@ -53,13 +50,13 @@
 	<div id="footer">
 		<div class="clearfix">
 			<div id="connect">
-				<a href="http://freewebsitetemplates.com/go/facebook/"
+				<a href="#"
 					target="_blank" class="facebook"></a><a
-					href="http://freewebsitetemplates.com/go/googleplus/"
+					href="#"
 					target="_blank" class="googleplus"></a><a
-					href="http://freewebsitetemplates.com/go/twitter/" target="_blank"
+					href="#" target="_blank"
 					class="twitter"></a><a
-					href="http://www.freewebsitetemplates.com/misc/contact/"
+					href="#"
 					target="_blank" class="tumbler"></a>
 			</div>
 			<p>&copy; BookMingle. All Rights Reserved.</p>

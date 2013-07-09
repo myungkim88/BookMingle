@@ -23,7 +23,7 @@
 					<a href="news.jsp">News</a>
 				</li>
 				<li>
-					<a href="about.jsp">About</a>
+					<a href="about.jsp">BookMingle</a>
 				</li>
 				<li>
 					<a href="contact.jsp">Contact</a>
