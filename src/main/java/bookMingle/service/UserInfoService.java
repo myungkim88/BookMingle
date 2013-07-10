@@ -7,15 +7,44 @@ import bookMingle.dao.UserInfoDao;
 import bookMingle.model.UserInfo;
 
 public class UserInfoService {
-	
-	@Resource(name="jdbc/bmdb")
+
+	@Resource(name = "jdbc/bmdb")
 	private DataSource ds;
-	
-	public void getUserInfo(UserInfo userInfo){
+
+	public UserInfo getUserInfo(UserInfo userInfo) {
+		UserInfo result = null;
 		try {
 			UserInfoDao userInfoDao = new UserInfoDao();
 			userInfoDao.setDataSource(ds);
-			userInfoDao.getUserInfo(userInfo.getMemberId());
+			result = userInfoDao.getUserInfo(userInfo.getMemberId());
+		} catch (Exception e) {
+		}
+		return result;
+	}
+
+	public void updateUserInfo(UserInfo userInfo) {
+		try {
+			UserInfoDao userInfoDao = new UserInfoDao();
+			userInfoDao.setDataSource(ds);
+			userInfoDao.udpateUserInfo(userInfo);
+		} catch (Exception e) {
+		}
+	}
+
+	public void insertNewUser(UserInfo userInfo) {
+		try {
+			UserInfoDao userInfoDao = new UserInfoDao();
+			userInfoDao.setDataSource(ds);
+			userInfoDao.insertUserInfo(userInfo);
+		} catch (Exception e) {
+		}
+	}
+
+	public void deleteUser(UserInfo userInfo) {
+		try {
+			UserInfoDao userInfoDao = new UserInfoDao();
+			userInfoDao.setDataSource(ds);
+			userInfoDao.deleteUserInfo(userInfo);
 		} catch (Exception e) {
 		}
 	}

@@ -6,7 +6,7 @@ package bookMingle.model;
 import java.util.Date;
 
 /**
- * @author MyungHo Kim myungho.mortimen@gmail.com
+ * @author MyungHo Kim	myungho.mortimen@gmail.com
  *
  * Basic User information for sign up
  */
@@ -15,10 +15,10 @@ public class UserInfo {
 	private String password;
 	private String firstname;
 	private String lastname;
-	private String dob;
+	private Date dob;
 	private String email;
-	private Date joinedDate;
-	private Date lastModifiedDate;
+	private Date registeredDate;
+	private Date lastActiveDate;
 	
 	/**
 	 * @return the memberId
@@ -71,38 +71,38 @@ public class UserInfo {
 	/**
 	 * @return the dob
 	 */
-	public String getDob() {
+	public Date getDob() {
 		return dob;
 	}
 	/**
 	 * @param dob the dob to set
 	 */
-	public void setDob(String dob) {
+	public void setDob(Date dob) {
 		this.dob = dob;
 	}
 	/**
 	 * @return the joinedDate
 	 */
-	public Date getJoinedDate() {
-		return joinedDate;
+	public Date getRegisteredDate() {
+		return registeredDate;
 	}
 	/**
 	 * @param joinedDate the joinedDate to set
 	 */
-	public void setJoinedDate(Date joinedDate) {
-		this.joinedDate = joinedDate;
+	public void setRegisteredDate(Date joinedDate) {
+		this.registeredDate = joinedDate;
 	}
 	/**
 	 * @return the lastModifiedDate
 	 */
 	public Date getLastModifiedDate() {
-		return lastModifiedDate;
+		return lastActiveDate;
 	}
 	/**
 	 * @param lastModifiedDate the lastModifiedDate to set
 	 */
-	public void setLastModifiedDate(Date lastModifiedDate) {
-		this.lastModifiedDate = lastModifiedDate;
+	public void setLastActiveDate(Date lastActiveDate) {
+		this.lastActiveDate = lastActiveDate;
 	}
 	/**
 	 * @return the email

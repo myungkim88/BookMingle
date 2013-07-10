@@ -19,7 +19,7 @@ import bookMingle.model.UserInfo;
  */
 public class UserInfoDao extends JdbcDaoSupport {
 	private static final String INSERT = "INSERT INTO userInfo " +
-			"(memberId, password, firstname, lastname, dob, joinedDate, " +
+			"(memberId, password, firstname, lastname, dob, registeredDate, " +
 			"lastModifiedDate) VALUES (?,?,?,?,?,?,?)";
 	private static final String SELECT_ALL = "SELECT * FROM userInfo";
 	private static final String DELETE_USER = "DELETE FROM userInfo WHERE memberId=?";
@@ -45,7 +45,7 @@ public class UserInfoDao extends JdbcDaoSupport {
 	public void insertUserInfo(UserInfo userInfo) {
 		getJdbcTemplate().update(INSERT, new Object[] {userInfo.getMemberId(), userInfo.getPassword(),
 				userInfo.getFirstname(), userInfo.getLastname(), userInfo.getDob(), 
-				userInfo.getJoinedDate(), new Date()});
+				userInfo.getRegisteredDate(), new Date()});
 	}
 	
 	public void deleteUserInfo(UserInfo userInfo) {
@@ -69,11 +69,11 @@ class UserInfoRowMapper implements RowMapper<Object> {
 	public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
 		UserInfo userInfo = new UserInfo();
 		userInfo.setMemberId(rs.getString("memberId"));
-		userInfo.setDob(rs.getString("dob"));
+		userInfo.setDob(rs.getDate("dob"));
 		userInfo.setFirstname(rs.getString("firstname"));
 		userInfo.setLastname(rs.getString("lastname"));
-		userInfo.setJoinedDate(rs.getDate("joinedDate"));
-		userInfo.setLastModifiedDate(rs.getDate("lastModifiedDate"));
+		userInfo.setRegisteredDate(rs.getDate("registeredDate"));
+		userInfo.setLastActiveDate(rs.getDate("lastModifiedDate"));
 		
 		return userInfo;
 	}
