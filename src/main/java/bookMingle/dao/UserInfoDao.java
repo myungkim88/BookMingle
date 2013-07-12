@@ -19,8 +19,9 @@ import bookMingle.model.UserInfo;
  */
 public class UserInfoDao extends JdbcDaoSupport {
 	private static final String INSERT = "INSERT INTO userInfo " +
-			"(memberId, password, firstname, lastname, dob, registeredDate, " +
-			"lastModifiedDate) VALUES (?,?,?,?,?,?,?)";
+			"(memberId, password, firstname, lastname, dob, email, registeredDate, " +
+			"lastActiveDate) VALUES (?,?,?,?,?,?,?,?)";
+	private static final String SELECT_AN_USER = "SELECT * FROM userInfo where memberId = ?";
 	private static final String SELECT_ALL = "SELECT * FROM userInfo";
 	private static final String DELETE_USER = "DELETE FROM userInfo WHERE memberId=?";
 	private static final String UPDATE_USER = "UPDATE userInfo SET password=?, " +
@@ -33,7 +34,7 @@ public class UserInfoDao extends JdbcDaoSupport {
 	 */
 	public UserInfo getUserInfo(String memberId) {
 		UserInfo userInfo = null;
-		List<Object> userInfos = getJdbcTemplate().query(SELECT_ALL, new Object[] {memberId}, 
+		List<Object> userInfos = getJdbcTemplate().query(SELECT_AN_USER, new Object[] {memberId}, 
 				new UserInfoRowMapper());
 		if (userInfos != null && userInfos.size() == 1) {
 			userInfo = (UserInfo) userInfos.get(0);
@@ -44,8 +45,8 @@ public class UserInfoDao extends JdbcDaoSupport {
 	
 	public void insertUserInfo(UserInfo userInfo) {
 		getJdbcTemplate().update(INSERT, new Object[] {userInfo.getMemberId(), userInfo.getPassword(),
-				userInfo.getFirstname(), userInfo.getLastname(), userInfo.getDob(), 
-				userInfo.getRegisteredDate(), new Date()});
+				userInfo.getFirstname(), userInfo.getLastname(), userInfo.getDob(), userInfo.getEmail(),
+				userInfo.getRegisteredDate(), userInfo.getLastModifiedDate()});
 	}
 	
 	public void deleteUserInfo(UserInfo userInfo) {
@@ -69,11 +70,13 @@ class UserInfoRowMapper implements RowMapper<Object> {
 	public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
 		UserInfo userInfo = new UserInfo();
 		userInfo.setMemberId(rs.getString("memberId"));
+		userInfo.setPassword(rs.getString("password"));
 		userInfo.setDob(rs.getDate("dob"));
 		userInfo.setFirstname(rs.getString("firstname"));
 		userInfo.setLastname(rs.getString("lastname"));
+		userInfo.setEmail(rs.getString("email"));
 		userInfo.setRegisteredDate(rs.getDate("registeredDate"));
-		userInfo.setLastActiveDate(rs.getDate("lastModifiedDate"));
+		userInfo.setLastActiveDate(rs.getDate("lastActiveDate"));
 		
 		return userInfo;
 	}
